@@ -1,0 +1,25 @@
+#k?t n?i database
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/osaheneat
+    username: root
+    password: admin123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  servlet:
+    multipart:
+      max-file-size: 10MB #dung l??ng t?i ?a c?a file
+
+#chìa khóa mã hóa
+jwt:
+  privateKey: gb1WpWpMjwlJkq/+1MmMd6AAwBzv9aE+DXOe1uFgPlI=
+
+
+#???ng d?n l?u file
+fileUpload:
+  rootPath: D:\huit\hk6\java(di_lam)\Backend java\bt\food_dilevery\uploads
